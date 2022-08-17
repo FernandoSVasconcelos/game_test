@@ -1,45 +1,38 @@
 #include <iostream>
+#include "character.hpp"
 using std::string;
-//#include "weapon.hpp"
 
-class Character{
-    private:
-        string Name;
-        int Level;
-        //Weapon weapon;
 
-    public:
-        Character(string name){
-            Name = name;
-            Level = 1;
-        }
+    Character::Character(string name){
+        Name = name;
+        Level = 1;
+    }
 
-        void SetName(string name){
-            Name = name;
-        }
+    void Character::SetName(string name){
+        Name = name;
+    }
 
-        string GetName(){
-            return Name;
-        }
+    string Character::GetName(){
+        return Name;
+    }
 
-        void SetLevel(int level){
-            Level = level;
-        }
+    void Character::SetLevel(int level){
+        Level = level;
+    }
 
-        int GetLevel(){
-            return Level;
-        }
+    int Character::GetLevel(){
+        return Level;
+    }
 
-        void print_stats(){
-            std::cout << "Player Status" << std::endl;
-            std::cout << "\tNome: " << Name << std::endl;
-            std::cout << "\tLevel: " << Level << std::endl;
-        }
+    void Character::print_stats(){
+        std::cout << "Player Status" << std::endl;
+        std::cout << "\tNome: " << Name << std::endl;
+        std::cout << "\tLevel: " << Level << std::endl;
+    }
 
-        void increase_level(){
-            Level++;
-        }
-};
+    void Character::increase_level(){
+        Level++;
+    }
 
 /*int main() {
     Character main_char = Character("Billy");

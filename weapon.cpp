@@ -1,40 +1,35 @@
 #include <iostream>
+#include "weapon.hpp"
 using std::string;
 
-class Weapon {
-private:
-    string Name;
-    int Ammu;
 
-public:
-    Weapon(string name, int ammu) {
-        Name = name;
-        Ammu = ammu;
-    }
+Weapon::Weapon(string name, int ammu) {
+    Name = name;
+    Ammu = ammu;
+}
 
-    void SetName(string name) {
-        Name = name;
-    }
+void Weapon::SetName(string name) {
+    Name = name;
+}
 
-    string GetName() {
-        return Name;
-    }
+string Weapon::GetName() {
+    return Name;
+}
 
-    void SetAmmul(int ammu) {
-        Ammu = ammu;
-    }
+void Weapon::SetAmmul(int ammu) {
+    Ammu = ammu;
+}
 
-    int GetAmmu() {
-        return Ammu;
-    }
+int Weapon::GetAmmu() {
+    return Ammu;
+}
 
-    void weapon_status() {
-        std::cout << "Infos" << std::endl;
-        std::cout << "\tWeapon: " << Name << std::endl;
-        std::cout << "\tAmmunation: " << Ammu << std::endl;
-    }
+void Weapon::weapon_status() {
+    std::cout << "Infos" << std::endl;
+    std::cout << "\tWeapon: " << Name << std::endl;
+    std::cout << "\tAmmunation: " << Ammu << std::endl;
+}
 
-};
 /*
 int main() {
     Weapon arma = Weapon("9mm", 100);
