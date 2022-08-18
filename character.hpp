@@ -5,6 +5,7 @@ class Character {
 private:
     string Name;
     int Level;
+    float power;
 
 public:
     Character(string name);

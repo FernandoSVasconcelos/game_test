@@ -8,4 +8,7 @@ int main() {
 
 	Character main_char = Character("Billy");
 	main_char.print_stats();
+
+	arma.SetName("Shotgun");
+	arma.weapon_status();
 }
